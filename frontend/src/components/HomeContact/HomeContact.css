@@ -1,0 +1,69 @@
+.contact-sec {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 80px;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.contact-sec .contact-img1 {
+    position: absolute;
+    top: 20%;
+    right: 20px;
+    height: 300px;
+    clip-path: polygon(39% 0, 70% 0, 65% 90%, 28% 89%);
+}
+
+.contact-sec .contact-img2 {
+    position: absolute;
+    top: 8%;
+    left: 50px;
+    height: 200px;
+    clip-path: polygon(51% 8%, 91% 50%, 50% 93%, 11% 35%);
+}
+
+.contact-sec .contact-img3 {
+    position: absolute;
+    bottom: 1%;
+    left: 22%;
+    height: 200px;
+    width: 200px;
+    clip-path: ellipse(30% 45% at 49% 52%);
+}
+
+.contact-sec p {
+    margin-top: 50px;
+}
+
+.contact-sec h1 {
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    max-width: 500px;
+    background: linear-gradient(to right, var(--primary-300), var(--primary-300), var(--primary-400), var(--primary-75), var(--primary-75), var(--primary-400), var(--primary-300));
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+}
+
+.contact-sec button {
+    padding: 10px 25px;
+    margin-top: 18px;
+    border: 1px solid var((--primary-50));
+    background-color: var(--accent-100);
+    color: var(--primary-100);
+    border-radius: 15px;
+    box-shadow: 0 0 5px var(--primary-50);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-sec button:hover {
+    box-shadow: 0 0 10px var(--primary-50);
+    opacity: 0.6;
+}

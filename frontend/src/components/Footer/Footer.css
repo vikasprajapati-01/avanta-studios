@@ -1,0 +1,32 @@
+.footer-sec {
+    width: 100%;
+    display: flex;
+    background-color: var(--accent-100);
+    color: #fff;
+    text-align: center;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+}
+
+.footer-sec p {
+    margin: 8px 20px;
+    color: var(--primary-100);
+}
+
+.footer-sec ul {
+    list-style: none;
+    display: flex;
+    margin-right: 200px;
+}
+
+.footer-sec ul li {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--primary-100);
+    padding: 7px 10px;
+    border-radius: 50px;
+    border: 1px solid var(--primary-100);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 8px 10px;
+}

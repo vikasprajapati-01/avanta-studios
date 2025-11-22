@@ -1,0 +1,80 @@
+.theme-switch {
+    position: fixed;
+    top: -8px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.theme-switch label {
+    position: relative;
+    width: 80px;
+    height: 35px;
+    display: block;
+    background: var(--primary-400);
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.theme-switch label::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 5.5px;
+    left: 5px;
+    background: linear-gradient(145deg, var(--primary-50), var(--secondary));
+    border-radius: 180px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.theme-switch input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.theme-switch input:checked + label {
+    background: #484848;
+}
+
+.theme-switch input:checked + label::after {
+    left: 50px;
+    transform: translateX(0);
+    background: linear-gradient(180deg, #777, #888);
+}
+
+/* .theme-switch label:active::after {
+    width: 40px;
+} */
+
+.theme-switch label .sun {
+    position: absolute;
+    width: 18px;
+    left: 8px;
+    top: 6px;
+    /* color: var(--primary-50); */
+    color: orangered;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.theme-switch label .moon {
+    position: absolute;
+    width: 18px;
+    top: 6px;
+    left: 54px;
+    color: #666;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+input:checked + label .sun {
+    color: var(--primary-100);
+}
+
+input:checked + label .moon {
+    color: var(--primary-100);
+}

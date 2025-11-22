@@ -1,0 +1,107 @@
+.hero2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.vid-sec {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hero-vid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-info {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    z-index: 1;
+}
+
+.hero-info h1 {
+    font-size: 80px;
+    font-weight: 900;
+    font-style: normal;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    color: var(--secondary);
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+.hero-info p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--primary-100);
+    max-width: 210px;
+}
+
+.hero-info button {
+    margin-top: 25px;
+    padding: 10px 20px;
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 5px;
+    color: var(--primary-200);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-info button:hover {
+    background-color: var(--primary-300);
+    color: var(--primary-100);
+}
+
+.gaming-text {
+    font-size: 80px;
+    margin: 0;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    font-weight: 900;
+    color: var(--secondary);
+}
+
+@media screen and (max-width: 650px) {
+
+    .hero-info {
+        position: absolute;
+        top: 80px;
+        left: 20px;
+        z-index: 1;
+    }
+
+    .hero2 h1 {
+        font-size: 24px;
+    }
+
+    .hero-info h1 {
+        font-size: 40px;
+    }
+    
+    @keyframes autoBlurAnimation {
+        40%, 60% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-80px);
+            opacity: 0;
+        }
+    }
+
+    .hero-info p {
+        font-size: 16px;
+        max-width: 150px;
+    }
+    .hero-info button {
+        padding: 5px 12px;
+        font-size: 12px;
+    }
+}
