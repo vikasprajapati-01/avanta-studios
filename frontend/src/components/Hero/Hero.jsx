@@ -97,7 +97,7 @@ function Hero() {
                                         Check out
                                     </button>
                                     <button className="border-btn flex items-center justify-center gap-2">
-                                        <FaRegCirclePlay className="play-icon" /> Watch video
+                                        <FaRegCirclePlay className="play-icon" /> Watch
                                     </button>
                                 </div>
                             </div>

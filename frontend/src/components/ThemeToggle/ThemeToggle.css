@@ -72,9 +72,9 @@
 }
 
 input:checked + label .sun {
-    color: var(--primary-100);
+    color: var(--accent-100);
 }
 
 input:checked + label .moon {
-    color: var(--primary-100);
+    color: var(--accent-100);
 }

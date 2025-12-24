@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route  } from 'react-router-dom';
 
 import Navbar from './components/Navbar/Navbar';
 import Hero2 from './components/Hero2/Hero2';
-// import Hero from './components/Hero/Hero';
+import Hero from './components/Hero/Hero';
 import HomeAbout from './components/HomeAbout/HomeAbout';
 import HomeContact from './components/HomeContact/HomeContact';
 import Footer from './components/Footer/Footer';
@@ -25,7 +25,7 @@ function App() {
               path="/"
               element={
                 <>
-                  {/* <Hero /> */}
+                  <Hero />
                   <Hero2 />
                   <HomeAbout />
                   <HomeContact />
