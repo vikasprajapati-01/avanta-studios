@@ -117,7 +117,3 @@ The public assets include the Avanta logo, game artwork, background images, a cu
 ## Development Notes
 
 The site is currently an evolving studio showcase. The `/shop` route provides the store navigation foundation, while additional store category pages, dedicated About pages, and contact destinations can be added as the product experience expands.
-
-## License
-
-No separate license has been published for this project. The source and creative assets remain under the copyright of Avanta Studios and its contributors.
